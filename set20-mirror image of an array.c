@@ -11,7 +11,7 @@ int main(void){
 	{
 	scanf("%d",&b[i]);	
 	}
-	for(i=5;i>=1;i++)
+	for(i=5;i>=1;i--)
 	{
 		c[k]=a[i];
 		k++;
@@ -19,7 +19,11 @@ int main(void){
 	for(i=1;i<=5;i++)
 	{
 		if(c[i]==b[i])
-	             {  printf("yes");
+	             { d++;
 	}}
+	if(d==5)
+	{
+		printf("yes");
+	}
 	return 0;
 }
